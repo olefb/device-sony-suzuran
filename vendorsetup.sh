@@ -15,3 +15,4 @@
 #
 
 add_lunch_combo aosp_e5823-userdebug
+add_lunch_combo omni_suzuran-userdebug
