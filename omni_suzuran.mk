@@ -26,11 +26,8 @@ TW_IGNORE_ABS_MT_TRACKING_ID := true
 $(call inherit-product, device/sony/suzuran/aosp_e5823.mk)
 
 # Inherit Omni GSM telephony parts
-$(call inherit-product, device/sony/common/radio.mk)
+PRODUCT_PROPERTY_OVERRIDES += telephony.lteOnGSMDevice=1
 $(call inherit-product, vendor/omni/config/gsm.mk)
-
-# Inherit Omni product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
 
 # Override Product Name for OmniROM
 PRODUCT_NAME := omni_suzuran
